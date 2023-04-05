@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-Rectangle = __import__('0-rectangle').Rectangle
+
+from 0-rectangle import Rectangle
 
 my_rectangle = Rectangle()
 print(type(my_rectangle))
