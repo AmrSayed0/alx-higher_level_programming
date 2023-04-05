@@ -1,37 +1,30 @@
-$ cat tests/0-add_integer.txt
-"""
-This is the "0-add_integer" module.
+Trying to import the function
+>>> add_integer = __import__('0-add_integer').add_integer
 
-The 0-add_integer module supplies one function, add_integer(a, b=98).
-"""
-
-# Test cases
-
-# Test 1
+Testing integer addition
 >>> add_integer(1, 2)
 3
 
-# Test 2
+Testing integer addition with negative numbers
 >>> add_integer(100, -2)
 98
 
-# Test 3
+Testing addition with only one integer
 >>> add_integer(2)
 100
 
-# Test 4
+Testing addition with floats
 >>> add_integer(100.3, -2)
 98
 
-# Test 5
+Testing addition with invalid input (string)
 >>> add_integer(4, "School")
 Traceback (most recent call last):
     ...
-TypeError: b must be an integer
+TypeError: b must be an integer or a float
 
-# Test 6
+Testing addition with invalid input (None)
 >>> add_integer(None)
 Traceback (most recent call last):
     ...
-TypeError: a must be an integer
-"""
+TypeError: a must be an integer or a float
