@@ -1,3 +1,4 @@
 #!/bin/bash
-# This script makes a request to 0.0.0.0:5000/catch_me that gets the message "You got me!".
-curl -s -X PUT -d "user_id=98" -H "Origin: You got me!" -L 0.0.0.0:5000/catch_me
+# Send a PUT request to the server with a custom header and data
+curl -s -X PUT -H "Origin: You got me!" -d "user_id=98" 0.0.0.0:5000/catch_me
+
